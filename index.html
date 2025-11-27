@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="script.js"></script>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+        .division {
+            margin: 40px;
+            text-align: center;
+            padding: 10px;
+            background-color: azure;
+        }
+        .inp {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+        .btn {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .outp {
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
+
+
+    </style>
 </head>
 <body>
-<div>
-        <input id="num1" type="number">
-    <input id="num2" type="number">
-</div>
-    <button onclick="add()">Add</button>
-    <button onclick="sub()">Sub</button>
-    <h2>Output: <span id="output">0</span></h2>
+    <div class="division">
+        <input class="inp" id="num1" type="number" placeholder="first number">
+        <input class="inp" id="num2" type="number" placeholder="second number">
+    </div>
+    <div class="btn">
+        <button class="button" onclick="add()">Add</button>
+        <button class="button" onclick="sub()">Sub</button>
+        <button class="button" onclick="mul()">Mul</button>
+        <button class="button" onclick="div()">Div</button>
+    </div>
+    <div class="outp">Output: <span id="output">0</span></div>
 </body>
 </html>
